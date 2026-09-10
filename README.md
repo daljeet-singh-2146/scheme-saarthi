@@ -120,7 +120,7 @@ SchemeSaarthi/
 ## 8. Presentation and Demo Video
 Presentation: https://docs.google.com/presentation/d/1ppQI5ZgEsnZVgHOZce4p-jtt03jjbWyY/edit?usp=sharing&ouid=102188742768616598730&rtpof=true&sd=true
 
-Video: <drive_link>
+Video: https://drive.google.com/file/d/1l2ni_eq7pJf2Z24grq2Wo4Zzz5FNiY8T/view?usp=sharing
 
 ## Run
 Locally:
