@@ -44,7 +44,8 @@ Scheduled Caste entrepreneurs and students eligible for NSFDC concessional credi
 - Backend: Python + FastAPI
 - Machine Learning: Python, Scikit-learn, RAG
 - Database: PostgreSQL, ChromaDB
-- Credit Product Data: NSFDC guidelines, SCA databases
+- Deployment: AWS, Render
+- Product Data: NSFDC guidelines, SCA databases
 
 ## 6. Architecture
 ```text
