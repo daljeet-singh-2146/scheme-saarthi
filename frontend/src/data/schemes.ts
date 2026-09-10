@@ -1,0 +1,230 @@
+export type SchemeDetail = {
+  slug: string;
+  name: string;
+  category: "Business" | "Education";
+  color: "saffron" | "navy" | "leaf";
+  tagline: string;
+  overview: string;
+  facts: { label: string; value: string }[];
+  eligibility: string[];
+  documents: string[];
+  process: string[];
+  applyLinks: { label: string; href: string; note: string }[];
+  loanCeiling: number;
+  rateMin: number;
+  rateMax: number;
+  rateTypical: number;
+  maxTenureYears: number;
+  defaultTenureYears: number;
+  minMoratoriumMonths: number;
+  maxMoratoriumMonths: number;
+  fundingCoveragePercent: number;
+};
+
+export const schemeDetails: SchemeDetail[] = [
+  {
+    slug: "micro-finance-scheme",
+    name: "Micro Finance Scheme",
+    category: "Business",
+    color: "saffron",
+    tagline: "Small-ticket NSFDC credit for SC micro entrepreneurs",
+    loanCeiling: 140000,
+    rateMin: 6.5,
+    rateMax: 8.0,
+    rateTypical: 6.5,
+    maxTenureYears: 3,
+    defaultTenureYears: 3,
+    minMoratoriumMonths: 3,
+    maxMoratoriumMonths: 6,
+    fundingCoveragePercent: 90,
+    overview:
+      "The Micro Finance Scheme provides NSFDC concessional credit up to ₹1,40,000 to Scheduled Caste (SC) beneficiaries for small income-generating projects such as street vending, artisan work, small shops and home-based production. Loans are not given directly — they are routed through authorized Channel Partners including NBFC-MFIs, State Channelizing Agencies (SCAs), and other approved intermediaries. The beneficiary's annual family income must not exceed ₹5,00,000.",
+    facts: [
+      { label: "Loan ceiling", value: "Up to ₹1,40,000" },
+      { label: "Interest rate", value: "~6.5% p.a. (concessional)" },
+      { label: "Collateral", value: "Not required" },
+      { label: "Tenure", value: "Up to 3 years" },
+      { label: "Moratorium", value: "3–6 months" },
+      { label: "Channel Partners", value: "NBFC-MFIs, SCAs" },
+    ],
+    eligibility: [
+      "Applicant must belong to the Scheduled Caste (SC) category.",
+      "Annual family income must not exceed ₹5,00,000.",
+      "Indian citizen, aged 18 years or above at the time of application.",
+      "Engaged in, or planning to start, a small income-generating activity (trade, service or micro manufacturing).",
+      "Applicant is not a wilful defaulter of any bank or financial institution.",
+      "Valid caste certificate issued by the competent authority is mandatory.",
+    ],
+    documents: [
+      "Aadhaar card of the applicant (and co-applicant, if any)",
+      "SC caste certificate issued by the competent revenue authority",
+      "Income certificate (family income ≤ ₹5,00,000) issued by the competent authority",
+      "PAN card",
+      "Recent passport-size photographs",
+      "Address proof — ration card, voter ID, electricity bill or rent agreement",
+      "Business plan or activity note with expected monthly income and expenses",
+      "Bank account statement for the last 6 months and a cancelled cheque",
+      "Proof of business existence — shop registration, Udyam registration or local body licence, if already operating",
+    ],
+    process: [
+      "Check preliminary eligibility on SchemeSaarthi — confirm SC status and family income ≤ ₹5 lakh.",
+      "Locate the nearest Channel Partner (NBFC-MFI or SCA) through the platform.",
+      "Submit your application with required documents to the Channel Partner.",
+      "The Channel Partner verifies your documents and activity, usually within 2–4 weeks.",
+      "On approval, NSFDC funds are routed through the Channel Partner to your bank account.",
+      "Repayment begins after the moratorium period (3–6 months).",
+    ],
+    applyLinks: [
+      {
+        label: "NSFDC Official Website",
+        href: "https://nsfdc.nic.in/",
+        note: "National Scheduled Castes Finance and Development Corporation — scheme details and SCA directory.",
+      },
+      {
+        label: "Find Your State Channelizing Agency",
+        href: "https://nsfdc.nic.in/state-channelising-agencies",
+        note: "Locate the SCA in your state that processes NSFDC loan applications.",
+      },
+    ],
+  },
+  {
+    slug: "term-loan-scheme",
+    name: "Term Loan Scheme",
+    category: "Business",
+    color: "navy",
+    tagline: "Concessional NSFDC term finance for SC entrepreneurs setting up or expanding units",
+    loanCeiling: 5000000,
+    rateMin: 6.5,
+    rateMax: 8.0,
+    rateTypical: 7.5,
+    maxTenureYears: 10,
+    defaultTenureYears: 5,
+    minMoratoriumMonths: 6,
+    maxMoratoriumMonths: 12,
+    fundingCoveragePercent: 90,
+    overview:
+      "The Term Loan Scheme provides NSFDC concessional finance up to ₹50,00,000 to Scheduled Caste (SC) entrepreneurs for setting up or expanding manufacturing, service or trading units. Loans are disbursed through Channel Partners — State Channelizing Agencies (SCAs), Public Sector Banks (PSBs), and Regional Rural Banks (RRBs). The beneficiary's annual family income must not exceed ₹5,00,000. Interest rates range from 6.5% to 10% p.a. depending on the loan amount and channel.",
+    facts: [
+      { label: "Loan ceiling", value: "Up to ₹50,00,000" },
+      { label: "Interest rate", value: "6.5–10% p.a. (concessional)" },
+      { label: "Collateral", value: "Asset charge or guarantee as per Channel Partner norms" },
+      { label: "Tenure", value: "Up to 10 years" },
+      { label: "Moratorium", value: "6–12 months" },
+      { label: "Channel Partners", value: "SCAs, PSBs, RRBs" },
+    ],
+    eligibility: [
+      "Applicant must belong to the Scheduled Caste (SC) category.",
+      "Annual family income must not exceed ₹5,00,000.",
+      "Proprietorship, partnership, LLP or company where SC promoter holds majority stake.",
+      "Promoter aged between 18 and 55 years with relevant experience or training in the proposed activity.",
+      "Viable project report showing the ability to service the loan from business cash flows.",
+      "Satisfactory credit history; no account classified as NPA with any lender.",
+      "Valid SC caste certificate issued by the competent authority is mandatory.",
+    ],
+    documents: [
+      "SC caste certificate issued by the competent revenue authority",
+      "Income certificate (family income ≤ ₹5,00,000) issued by the competent authority",
+      "PAN and Aadhaar of all promoters and directors",
+      "Constitution documents — partnership deed, MoA and AoA, or registration certificate",
+      "Detailed project report with cost of project and means of finance",
+      "Quotations for plant, machinery and equipment to be purchased",
+      "Proof of premises — ownership deed or registered lease agreement",
+      "Bank statements of the business account for the last 12 months",
+      "Statutory approvals — pollution clearance, trade licence, factory licence as applicable",
+    ],
+    process: [
+      "Check preliminary eligibility on SchemeSaarthi — confirm SC status and family income ≤ ₹5 lakh.",
+      "Prepare a detailed project report with realistic cost and revenue estimates.",
+      "Approach the Channel Partner (SCA, PSB or RRB) identified through the platform.",
+      "Submit KYC, caste certificate, income certificate and project documents for appraisal.",
+      "The Channel Partner conducts a technical and financial appraisal and a unit visit.",
+      "On approval, NSFDC funds are routed through the Channel Partner; disbursement may be in stages.",
+    ],
+    applyLinks: [
+      {
+        label: "NSFDC Official Website",
+        href: "https://nsfdc.nic.in/",
+        note: "National Scheduled Castes Finance and Development Corporation — scheme details and guidelines.",
+      },
+      {
+        label: "Find Your State Channelizing Agency",
+        href: "https://nsfdc.nic.in/state-channelising-agencies",
+        note: "Locate the SCA in your state that processes NSFDC term loan applications.",
+      },
+    ],
+  },
+  {
+    slug: "educational-loan-scheme",
+    name: "Educational Loan Scheme",
+    category: "Education",
+    color: "leaf",
+    tagline: "NSFDC-backed education loans for SC students pursuing higher studies",
+    loanCeiling: 3000000,
+    rateMin: 6.5,
+    rateMax: 15.0,
+    rateTypical: 7.5,
+    maxTenureYears: 15,
+    defaultTenureYears: 7,
+    minMoratoriumMonths: 6,
+    maxMoratoriumMonths: 12,
+    fundingCoveragePercent: 90,
+    overview:
+      "The Educational Loan Scheme provides NSFDC concessional education loans to Scheduled Caste (SC) students for pursuing higher education in India and abroad. Loans cover tuition, hostel, examination and related costs and are disbursed through Channel Partners — State Channelizing Agencies (SCAs) and participating banks. The student's annual family income must not exceed ₹5,00,000. Interest rates range from 6.5% to 15% p.a. depending on the course and loan amount, with a moratorium covering the course period plus 6–12 months.",
+    facts: [
+      { label: "Loan ceiling", value: "Need-based (per NSFDC norms)" },
+      { label: "Interest rate", value: "6.5–15% p.a. (concessional)" },
+      { label: "Collateral", value: "As per Channel Partner norms" },
+      { label: "Tenure", value: "Up to 15 years after moratorium" },
+      { label: "Moratorium", value: "Course period + 6–12 months" },
+      { label: "Channel Partners", value: "SCAs, participating banks" },
+    ],
+    eligibility: [
+      "Student must belong to the Scheduled Caste (SC) category.",
+      "Annual family income must not exceed ₹5,00,000.",
+      "Indian national who has secured admission to a recognised higher-education course through merit-based selection.",
+      "Course offered by a UGC / AICTE / government-approved institution in India, or a recognised institution abroad.",
+      "Applicant aged 16 years or above; a parent or guardian joins as co-applicant.",
+      "Valid SC caste certificate issued by the competent authority is mandatory.",
+      "Consistent academic record; the loan may be withdrawn if the student discontinues the course.",
+    ],
+    documents: [
+      "SC caste certificate issued by the competent revenue authority",
+      "Income certificate (family income ≤ ₹5,00,000) issued by the competent authority",
+      "Admission letter or offer letter from the institution",
+      "Fee structure issued by the institution",
+      "Mark sheets and certificates of Class 10, Class 12 and any later qualifying examinations",
+      "Entrance test scorecard, where admission is test-based",
+      "Aadhaar and PAN of the student and the co-applicant",
+      "Bank statements of the co-applicant for the last 6 months",
+      "Passport and visa papers for study-abroad applications",
+    ],
+    process: [
+      "Check preliminary eligibility on SchemeSaarthi — confirm SC status and family income ≤ ₹5 lakh.",
+      "Confirm admission and collect the official fee structure from the institution.",
+      "Approach the Channel Partner (SCA or participating bank) identified through the platform.",
+      "Submit application with caste certificate, income certificate and course documents.",
+      "The Channel Partner verifies documents and may interview the student and co-applicant.",
+      "On approval, NSFDC funds are routed through the Channel Partner; fees are disbursed to the institution.",
+    ],
+    applyLinks: [
+      {
+        label: "NSFDC Official Website",
+        href: "https://nsfdc.nic.in/",
+        note: "National Scheduled Castes Finance and Development Corporation — education loan details.",
+      },
+      {
+        label: "Find Your State Channelizing Agency",
+        href: "https://nsfdc.nic.in/state-channelising-agencies",
+        note: "Locate the SCA in your state that processes NSFDC education loan applications.",
+      },
+    ],
+  },
+];
+
+export const schemeSlugByName: Record<string, string> = Object.fromEntries(
+  schemeDetails.map((s) => [s.name, s.slug]),
+);
+
+export function getScheme(slug: string): SchemeDetail | undefined {
+  return schemeDetails.find((s) => s.slug === slug);
+}

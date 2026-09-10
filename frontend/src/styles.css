@@ -1,0 +1,212 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * SchemeSaarthi design system.
+ * Tri-color palette: saffron orange, deep navy blue, leaf green.
+ * Light mode only.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  /* Brand tri-color */
+  --color-saffron: var(--saffron);
+  --color-saffron-foreground: var(--saffron-foreground);
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-leaf: var(--leaf);
+  --color-leaf-foreground: var(--leaf-foreground);
+  --color-cream: var(--cream);
+  --color-sand: var(--sand);
+
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-chart-1: var(--saffron);
+  --color-chart-2: var(--navy);
+  --color-chart-3: var(--leaf);
+  --color-chart-4: oklch(0.828 0.189 84.429);
+  --color-chart-5: oklch(0.769 0.188 70.08);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand tri-color */
+  --saffron: oklch(0.68 0.17 47);
+  --saffron-foreground: oklch(0.99 0.01 80);
+  --navy: oklch(0.42 0.16 256);
+  --navy-foreground: oklch(0.99 0.01 80);
+  --leaf: oklch(0.58 0.14 150);
+  --leaf-foreground: oklch(0.99 0.01 80);
+  --cream: oklch(0.99 0.008 85);
+  --sand: oklch(0.96 0.015 85);
+
+  --background: oklch(0.995 0.006 85);
+  --foreground: oklch(0.23 0.03 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.23 0.03 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.23 0.03 260);
+
+  --primary: var(--saffron);
+  --primary-foreground: var(--saffron-foreground);
+  --secondary: var(--navy);
+  --secondary-foreground: var(--navy-foreground);
+  --muted: oklch(0.96 0.012 85);
+  --muted-foreground: oklch(0.45 0.03 257);
+  --accent: var(--leaf);
+  --accent-foreground: var(--leaf-foreground);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.9 0.015 85);
+  --input: oklch(0.92 0.012 85);
+  --ring: var(--saffron);
+
+  --sidebar: oklch(0.985 0.006 85);
+  --sidebar-foreground: oklch(0.23 0.03 260);
+  --sidebar-primary: var(--navy);
+  --sidebar-primary-foreground: var(--navy-foreground);
+  --sidebar-accent: oklch(0.96 0.012 85);
+  --sidebar-accent-foreground: oklch(0.23 0.03 260);
+  --sidebar-border: oklch(0.9 0.015 85);
+  --sidebar-ring: var(--saffron);
+}
+
+.dark {
+  --background: oklch(0.17 0.02 260);
+  --foreground: oklch(0.98 0.005 85);
+  --card: oklch(0.22 0.025 260);
+  --card-foreground: oklch(0.98 0.005 85);
+  --popover: oklch(0.22 0.025 260);
+  --popover-foreground: oklch(0.98 0.005 85);
+  --primary: var(--saffron);
+  --primary-foreground: oklch(0.17 0.02 260);
+  --secondary: var(--navy);
+  --secondary-foreground: oklch(0.98 0.005 85);
+  --muted: oklch(0.28 0.02 260);
+  --muted-foreground: oklch(0.72 0.02 257);
+  --accent: var(--leaf);
+  --accent-foreground: oklch(0.17 0.02 260);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--saffron);
+  --sidebar: oklch(0.22 0.025 260);
+  --sidebar-foreground: oklch(0.98 0.005 85);
+  --sidebar-primary: var(--saffron);
+  --sidebar-primary-foreground: oklch(0.17 0.02 260);
+  --sidebar-accent: oklch(0.28 0.02 260);
+  --sidebar-accent-foreground: oklch(0.98 0.005 85);
+  --sidebar-border: oklch(1 0 0 / 12%);
+  --sidebar-ring: var(--saffron);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Brand utilities */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility bg-tricolor-gradient {
+  background-image: linear-gradient(
+    135deg,
+    var(--saffron) 0%,
+    var(--saffron) 33%,
+    var(--navy) 33%,
+    var(--navy) 66%,
+    var(--leaf) 66%,
+    var(--leaf) 100%
+  );
+}
+
+@utility bg-soft-hero {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 80% 0%, oklch(0.68 0.17 47 / 0.12), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 0% 20%, oklch(0.42 0.16 256 / 0.10), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, oklch(0.58 0.14 150 / 0.10), transparent 60%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@media print {
+  header, footer, nav, button {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
