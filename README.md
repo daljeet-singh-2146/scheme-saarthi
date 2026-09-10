@@ -2,6 +2,8 @@
 **SchemeSaarthi**, a web-based platform that helps Scheduled Caste (SC) beneficiaries discover and understand NSFDC-style concessional credit products routed through authorized Channel Partners.
 SchemeSaarthi matches eligible SC entrepreneurs and students to the right credit product using a guided **Find My Scheme** questionnaire, explains loan terms in plain language, and directs them to the appropriate Channel Partner to apply.
 
+Live Link: https://scheme-saarthi-silk.vercel.app
+
 ## 1. Project Information
 - **Project Title:** SchemeSaarthi – AI-Driven Concessional Credit Matching for SC Entrepreneurs
 - **PS ID:** SIH26092
@@ -128,8 +130,6 @@ Locally:
 2. cd scheme-saarthi/
 3. npm install
 4. npm run dev
-
-Live Link: https://scheme-saarthi-silk.vercel.app
 
 ## Future Scope
 - Expand coverage to other NSFDC verticals and credit products as they are introduced.
