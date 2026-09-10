@@ -299,7 +299,7 @@ function HomePage() {
                 View More
               </Link>
             </div>
-            <a href="https://www.youtube.com/results?search_query=SchemeSaarthi+introduction" target="_blank" rel="noreferrer" aria-label="Watch the SchemeSaarthi introduction video" className="group relative block w-full max-w-md justify-self-center overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-lg lg:justify-self-end">
+            <a href="https://youtu.be/EKEEBmzQiOg" target="_blank" rel="noreferrer" aria-label="Watch the SchemeSaarthi introduction video" className="group relative block w-full max-w-md justify-self-center overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow-lg lg:justify-self-end">
               <img src={aboutThumbnail} alt="Watch the SchemeSaarthi introduction video" className="block aspect-video w-full object-cover" />
               <span className="absolute inset-0 grid place-items-center bg-black/10 transition-colors group-hover:bg-black/20">
                 <span className="grid h-16 w-16 place-items-center rounded-full bg-saffron text-saffron-foreground shadow-lg">
