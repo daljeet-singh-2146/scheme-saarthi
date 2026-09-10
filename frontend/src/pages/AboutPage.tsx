@@ -22,7 +22,7 @@ const values = [
 function VideoThumbnail() {
   return (
     <a
-      href="https://www.youtube.com/results?search_query=SchemeSaarthi+introduction"
+      href="https://youtu.be/EKEEBmzQiOg"
       target="_blank"
       rel="noreferrer"
       aria-label="Watch the SchemeSaarthi introduction video"
